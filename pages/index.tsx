@@ -20,7 +20,6 @@ const Home = () => {
     (context) => {
       const array = 'FUCKYOU.'.split('')
       const idx = tick % array.length
-      console.log(idx)
       if (array[idx] === '.') {
         return `https://fav.farm/🌚`
       }
@@ -37,6 +36,7 @@ const Home = () => {
 
   const options = useMemo(
     () => ({
+      defaultIcon: '/favicon.ico',
       autoSetIcon: true,
       linkTagSelector: 'link[rel="icon"]'
     }),

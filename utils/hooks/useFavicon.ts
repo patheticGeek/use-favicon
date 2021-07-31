@@ -7,6 +7,10 @@ export type FaviconDrawFunc = (
 
 export type UseFaviconOptions = {
   /**
+   * Default icon url to be shown (mainly used if using SSR)
+   */
+  defaultIcon: string
+  /**
    * Width of the canvas
    */
   width: number
@@ -25,6 +29,7 @@ export type UseFaviconOptions = {
 }
 
 const defaultOptions = {
+  defaultIcon: '',
   width: 200,
   height: 200,
   autoSetIcon: false,
@@ -45,7 +50,7 @@ const useFavicon = (
     () => ({ ...defaultOptions, ...userOptions }),
     [userOptions]
   )
-  const [iconURL, setIconURL] = useState('')
+  const [iconURL, setIconURL] = useState(options.defaultIcon)
   const canvasRef = useRef(
     typeof window === 'undefined' ? undefined : document.createElement('canvas')
   )
