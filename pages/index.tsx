@@ -60,13 +60,13 @@ const Home = () => {
 
         <div className="flex justify-center flex-wrap">
           <a
-            href="https://github.com/patheticGeek/pg-nextjs-boilerplate"
+            href="https://github.com/patheticGeek/use-favicon"
             className="w-80 p-6 border border-gray-300 hover:border-gray-600 transition-all rounded-lg m-2">
             <h2 className="text-2xl mb-3">Open on GitHub &rarr;</h2>
             <p>Checkout the code</p>
           </a>
           <a
-            href="https://github.com/patheticGeek/pg-nextjs-boilerplate/fork"
+            href="https://github.com/patheticGeek/use-favicon/fork"
             className="w-80 p-6 border border-gray-300 hover:border-gray-600 transition-all rounded-lg m-2">
             <h2 className="text-2xl mb-3">Fork on GitHub &rarr;</h2>
             <p>Start developing now!</p>
